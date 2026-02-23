@@ -1,0 +1,41 @@
+{
+  "admin_wa": "6285782332479",
+  "games": {
+    "Roblox": {
+      "maps": {
+        "Perang": {
+          "jenis": {
+            "level": {
+              "label": "Target Level",
+              "options": [
+                {"value": "Lv1-20", "text": "Lv1 - 20 + Bonus = Rp35.000"},
+                {"value": "Lv20-30", "text": "Lv20 - 30 + Bonus = Rp55.000"},
+                {"value": "Lv30-40", "text": "Lv30 - 40 + Bonus = Rp70.000"},
+                {"value": "Lv40-50", "text": "Lv40 - 50 + Bonus = Rp90.000"},
+                {"value": "Lv50-60", "text": "Lv50 - 60 + Bonus = Rp120.000"},
+                {"value": "custom", "text": "Custom Level (hubungi admin)"}
+              ]
+            },
+            "Cash": {
+              "label": "Target Cash / Rank",
+              "options": [
+                {"value": "$15", "text": "$15 = Rp30.000"},
+                {"value": "$30", "text": "$30 = Rp40.000"},
+                {"value": "$50", "text": "$50 = Rp60.000"},
+                {"value": "$70", "text": "$70 = Rp85.000"}
+              ]
+            },
+            "token": {
+              "label": "Jumlah Token Zombie",
+              "options": [
+                {"value": "1 Token", "text": "1 Token = Rp5.000"},
+                {"value": "5 Token", "text": "5 Token = Rp25.000"},
+                {"value": "10 Token", "text": "10 Token = Rp45.000"}
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

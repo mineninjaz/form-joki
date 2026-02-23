@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joki Games • Pesan Sekarang</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Joki Games</h1>
+        <p class="subtitle">Pesan joki cepat, aman & terpercaya</p>
+
+        <div class="form-group">
+            <input type="text" id="nama" placeholder=" " required />
+            <label for="nama" class="required" data-tooltip="Nama pemilik akun">Nama</label>
+        </div>
+
+        <div class="form-group">
+            <select id="Game" required>
+                <option value="">-- Pilih Game --</option>
+            </select>
+            <label for="Game" class="required" data-tooltip="Pilih game yang ingin dijoki">Game</label>
+        </div>
+
+        <div class="form-group" id="detailmap" style="display:none;">
+            <select id="Map" required>
+                <option value="">-- Pilih Map / Mode --</option>
+            </select>
+            <label for="Map" id="labelmap" class="required" data-tooltip="Pilih map atau mode permainan">Map/Mode</label>
+        </div>
+
+        <div class="form-row" id="jenis-paket-row" style="display:none;">
+            <div class="form-group half">
+                <select id="Jenis" required>
+                    <option value="">-- Pilih Jenis Joki --</option>
+                </select>
+                <label for="Jenis" id="labeljenis" class="required" data-tooltip="Pilih jenis layanan joki">Jenis Joki</label>
+            </div>
+            <div class="form-group half">
+                <select id="Paket" required>
+                    <option value="">-- Pilih Paket --</option>
+                </select>
+                <label for="Paket" id="labelpaket" class="required" data-tooltip="Pilih paket sesuai kebutuhan">Paket</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="username" placeholder=" " required />
+            <label for="username" class="required" data-tooltip="Username atau ID akun game">Username / ID</label>
+        </div>
+
+        <div class="form-group">
+            <input type="password" id="password" placeholder=" " required />
+            <label for="password" class="required" data-tooltip="Password akun game (akan dihapus setelah selesai)">Password</label>
+        </div>
+
+        <button id="btnKirim" onclick="kirimPesan()" disabled>
+            <span id="btnText">Kirim Pesanan</span>
+            <span id="btnLoading" style="display:none;">Memproses...</span>
+        </button>
+
+        <p class="footer-note">
+            Data login hanya digunakan untuk proses joki dan akan dihapus setelah selesai.
+        </p>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">⚠️</div>
+            <h2 class="modal-title">Perhatian!</h2>
+            <p class="modal-text" id="modalMessage">Silakan lengkapi semua field yang bertanda * terlebih dahulu.</p>
+            <button class="modal-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="asset/javascript/script.js"></script>
+</body>
+</html>
